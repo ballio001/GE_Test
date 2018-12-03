@@ -4,14 +4,14 @@
 #include <ctime>
 
 bool addedNumber = false;
-bool winner = false;
+bool end = false;
 bool invalid = false;
 
 int main()
 {
 	srand(time(NULL));
 
-	while (winner == false)
+	while (end == false)
 	{
 		int guessNumber;
 		Production p;
@@ -80,7 +80,7 @@ int main()
 		if (lottoNumbers == guess)
 		{
 			std::cout << "you guessed the number" << std::endl;
-			winner = true;
+			end = true;
 		}
 		else
 		{
